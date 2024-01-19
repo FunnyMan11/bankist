@@ -12,15 +12,19 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Bankist | When Banking meets Minimalist</title>
+
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="header">
       <nav class="nav">
         <img
-          src="./img/logo"
+          src="img/logo.png"
           alt="Bankist logo"
           class="nav__logo"
           id="logo"
+          designer="Jonas"
+          data-version-number="3.0"
         />
         <ul class="nav__links">
           <li class="nav__item">
@@ -41,6 +45,7 @@
       </nav>
 
       <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
         <h1>
           When
           <!-- Green highlight effect -->
@@ -51,7 +56,7 @@
         <h4>A simpler banking experience for a simpler life.</h4>
         <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
         <img
-          src=""
+          src="img/hero.png"
           class="header__img"
           alt="Minimalist bank items"
         />
@@ -68,14 +73,15 @@
 
       <div class="features">
         <img
-          src=""
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
           alt="Computer"
           class="features__img lazy-img"
         />
         <div class="features__feature">
           <div class="features__icon">
             <svg>
-              <use xlink:href=""></use>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
             </svg>
           </div>
           <h5 class="features__header">100% digital bank</h5>
@@ -100,12 +106,15 @@
           </p>
         </div>
         <img
-          src=""
+          src="img/grow-lazy.jpg"
+          data-src="img/grow.jpg"
           alt="Plant"
           class="features__img lazy-img"
         />
 
         <img
+          src="img/card-lazy.jpg"
+          data-src="img/card.jpg"
           alt="Credit card"
           class="features__img lazy-img"
         />
@@ -211,7 +220,7 @@
       </div>
 
       <div class="slider">
-        <div class="slide slide--1">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">Best financial decision ever!</h5>
             <blockquote class="testimonial__text">
@@ -223,14 +232,14 @@
               autem esse non voluptatem saepe provident nihil molestiae.
             </blockquote>
             <address class="testimonial__author">
-              <img src="" alt="" class="testimonial__photo" />
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Aarav Lynn</h6>
               <p class="testimonial__location">San Francisco, USA</p>
             </address>
           </div>
         </div>
 
-        <div class="slide slide--2">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">
               The last step to becoming a complete minimalist
@@ -243,14 +252,14 @@
               deserunt exercitationem deleniti.
             </blockquote>
             <address class="testimonial__author">
-              <img src="" alt="" class="testimonial__photo" />
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Miyah Miles</h6>
               <p class="testimonial__location">London, UK</p>
             </address>
           </div>
         </div>
 
-        <div class="slide slide--3">
+        <div class="slide">
           <div class="testimonial">
             <h5 class="testimonial__header">
               Finally free from old-school banks
@@ -264,17 +273,13 @@
               alias reiciendis, perferendis facere.
             </blockquote>
             <address class="testimonial__author">
-              <img src="" alt="" class="testimonial__photo" />
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
               <h6 class="testimonial__name">Francisco Gomes</h6>
               <p class="testimonial__location">Lisbon, Portugal</p>
             </address>
           </div>
         </div>
 
-        <!-- <div class="slide"><img src="" alt="Photo 1" /></div>
-        <div class="slide"><img src="" alt="Photo 2" /></div>
-        <div class="slide"><img src="" alt="Photo 3" /></div>
-        <div class="slide"><img src="" alt="Photo 4" /></div> -->
         <button class="slider__btn slider__btn--left">&larr;</button>
         <button class="slider__btn slider__btn--right">&rarr;</button>
         <div class="dots"></div>
@@ -315,7 +320,7 @@
           <a class="footer__link" href="#">Contact Us</a>
         </li>
       </ul>
-      <img src="" alt="Logo" class="footer__logo" />
+      <img src="img/icon.png" alt="Logo" class="footer__logo" />
       <p class="footer__copyright">
         &copy; Copyright by
         <a
@@ -346,6 +351,6 @@
     </div>
     <div class="overlay hidden"></div>
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
